@@ -71,7 +71,7 @@ body {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: ;
+  background: url("https://cdn.pixabay.com/photo/2014/06/16/23/40/grey-370125_1280.png");
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -1493,10 +1493,10 @@ pre .addition {
   color: #105ede;
 }
 pre .meta {
-  color: #c792ea;
+  color: #7c4dff;
 }
 pre .comment {
-  color: #546e7a;
+  color: rgba(149,165,166,0.8);
 }
 pre .variable,
 pre .attribute,
@@ -1510,10 +1510,10 @@ pre .css .id,
 pre .tag .name,
 pre .css .class,
 pre .css .pseudo {
-  color: #ff5370;
+  color: #e53935;
 }
 pre .tag {
-  color: #89ddff;
+  color: #39adb5;
 }
 pre .number,
 pre .preprocessor,
@@ -1521,10 +1521,10 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f78c6c;
+  color: #f76d47;
 }
 pre .built_in {
-  color: #ffcb6b;
+  color: #ffb62c;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -1537,12 +1537,12 @@ pre .xml .cdata,
 pre .special,
 pre .number,
 pre .formula {
-  color: #c3e88d;
+  color: #91b859;
 }
 pre .keyword,
 pre .title,
 pre .css .hexcolor {
-  color: #89ddff;
+  color: #39adb5;
 }
 pre .function,
 pre .python .decorator,
@@ -1552,19 +1552,19 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #82aaff;
+  color: #6182b8;
 }
 pre .tag .attr,
 pre .javascript .function {
-  color: #c792ea;
+  color: #7c4dff;
 }
 #article-container pre,
 #article-container figure.highlight {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #263238;
-  color: #eff;
+  background: #f6f8fa;
+  color: #90a4ae;
   line-height: 20px;
 }
 blockquote {
@@ -1606,7 +1606,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #eff;
+  color: #90a4ae;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1618,7 +1618,7 @@ blockquote footer cite:before {
   border: none;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(128,203,196,0.125);
+  background-color: rgba(128,203,196,0.251);
 }
 #article-container figure.highlight table {
   display: block;
@@ -1646,16 +1646,16 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption a {
   float: right;
   padding-right: 10px;
-  color: #eff;
+  color: #90a4ae;
 }
 #article-container figure.highlight figcaption a:hover {
-  border-bottom-color: #eff;
+  border-bottom-color: #90a4ae;
 }
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #263238;
-  color: rgba(238,255,255,0.5);
+  background-color: #f6f8fa;
+  color: rgba(144,164,174,0.5);
   text-align: right;
 }
 #article-container figure.highlight .code pre {
@@ -1671,8 +1671,8 @@ blockquote footer cite:before {
   overflow: hidden;
   width: 100%;
   height: 1.5rem;
-  background: #222d32;
-  color: rgba(238,255,255,0.8);
+  background: #e6ebf1;
+  color: #90a4ae;
   font-size: 14px;
 }
 #article-container figure.highlight .highlight-tools .code-expand {
@@ -2224,6 +2224,13 @@ blockquote footer cite:before {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
 }
 #footer-wrap {
   position: relative;
@@ -3190,7 +3197,13 @@ _:future,
   border-radius: 8px 0 0 8px;
 }
 #recent-posts > .recent-post-item .right_radius {
-  border-radius: 8px 0 0 8px;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -o-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
+  border-radius: 0 8px 8px 0;
 }
 #recent-posts > .recent-post-item .post_cover {
   overflow: hidden;
@@ -3737,8 +3750,8 @@ _:future,
 #article-container.post-content h6:before {
   position: absolute;
   top: calc(50% - 0.35rem);
-  color: #f47466;
-  content: '\f0c1';
+  color: #38a4e8;
+  content: '\f1dc';
   line-height: 1;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
