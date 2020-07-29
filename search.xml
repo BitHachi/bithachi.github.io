@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Windouws10+PicGo+七牛云+Typora搭建写作环境与图床</title>
+      <link href="/posts/641e0332.html"/>
+      <url>/posts/641e0332.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-需要的环境工具"><a href="#1-需要的环境工具" class="headerlink" title="1.需要的环境工具"></a>1.需要的环境工具</h2><ul><li>Typora : markdown 文档写作工具，使用PicGo<code>间接</code>将图片上传到七牛云</li><li>PicGo : 图床工具，负责<code>直接</code>上传图片到七牛云</li><li>七牛云：存储从PicGo上传来的图片，为什么选择七牛云，因为每个月有10G的免费流量和存储空间，可以白嫖（哈哈）</li><li>域名：需要一个域名绑定七牛云的CDN，以访问图片，域名可以从阿里云，腾讯云等平台购买，域名需要备案。</li></ul><h2 id="2-下载软件"><a href="#2-下载软件" class="headerlink" title="2.下载软件"></a>2.下载软件</h2><h3 id="2-1-Typora"><a href="#2-1-Typora" class="headerlink" title="2.1 Typora"></a>2.1 Typora</h3><ul><li>下载地址：<a href="https://typora.io/" target="_blank" rel="noopener">https://typora.io/</a>，下载后直接安装next默认就行了，可以根据自己喜好更改安装路径</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729204003.png" alt="image-20200729204003283"></p><h3 id="2-2-PicGo"><a href="#2-2-PicGo" class="headerlink" title="2.2 PicGo"></a>2.2 PicGo</h3><ul><li>下载地址：<a href="https://github.com/Molunerfinn/picgo/releases" target="_blank" rel="noopener">https://github.com/Molunerfinn/picgo/releases</a>,下载后直接安装next默认就行了，可以根据自己喜好更改安装路径</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729204412.png" alt="image-20200729204412318"></p><h3 id="2-3软件图标"><a href="#2-3软件图标" class="headerlink" title="2.3软件图标"></a>2.3软件图标</h3><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729204635.png" alt="image-20200729204635137"></p><h2 id="3-正式开始配置"><a href="#3-正式开始配置" class="headerlink" title="3.正式开始配置"></a>3.正式开始配置</h2><h3 id="3-1-注册七牛云"><a href="#3-1-注册七牛云" class="headerlink" title="3.1 注册七牛云"></a>3.1 注册七牛云</h3><ul><li>点击<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云官网</a> → 点击右上角免费注册 → 按步骤填写相关信息-&gt;进行相关的实名认证</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729205616.png" alt="image-20200729205616919"></p><h3 id="3-2-配置对象存储"><a href="#3-2-配置对象存储" class="headerlink" title="3.2 配置对象存储"></a>3.2 配置对象存储</h3><blockquote><p>七牛云对象存储就是存储你图片的地方</p></blockquote><ul><li>打开七牛云控制台-&gt;点击对象存储</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729205747.png" alt="image-20200729205747005"></p><ul><li>点击新建空间</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729205811.png" alt="image-20200729205811290"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729205924.png" alt="image-20200729205924364"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729210009.png" alt="image-20200729210009650"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729210128.png" alt="image-20200729210128499"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729210401.png" alt="image-20200729210401673"></p><h3 id="3-3-DNS配置"><a href="#3-3-DNS配置" class="headerlink" title="3.3 DNS配置"></a>3.3 DNS配置</h3><ul><li>绑定cname</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729211649.png" alt="image-20200729211649079"></p><ul><li>前往你域名购买的服务商平台进行CNAME配置</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729211451.png" alt="image-20200729211451426"></p><p>以上配置成功之后，就可以上传图片，并通过你的域名来访问图片了</p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729211812.png" alt="image-20200729211812258"></p><h3 id="3-4-配置PicGo"><a href="#3-4-配置PicGo" class="headerlink" title="3.4 配置PicGo"></a>3.4 配置PicGo</h3><ul><li><p>上面我们已经可以通过七牛云配置来访问图片了，但是上传图片和使用链接到Typora还是比较麻烦的，于是我们使用PicGo软件来简化这一步骤。</p></li><li><p>接下来进行配置</p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729212326.png" alt="image-20200729212326328"></p></li><li><p>上面的AK和SK就是下面图片所显示的的缩写</p></li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729212232.png" alt="image-20200729212232427"></p><ul><li>关于存储区域，根据你当初申请对象存储空间时的地区来写代号</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729212533.png" alt="image-20200729212533624"></p><h3 id="3-5-配置Typora"><a href="#3-5-配置Typora" class="headerlink" title="3.5 配置Typora"></a>3.5 配置Typora</h3><ul><li>以上配置完毕，接下来我们配置Typora，可以实现截屏图片，粘贴复制直接生成mrakdown格式，简化PicGo上传步骤</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729213020.png" alt="image-20200729213020743"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729213111.png" alt="image-20200729213111212"></p><p>然后就可以在PicGo里面看到你上传的Typora测试图片了</p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729213318.png" alt="image-20200729213317978"></p><h2 id="4-PicGo上传图片的几种方式和格式"><a href="#4-PicGo上传图片的几种方式和格式" class="headerlink" title="4. PicGo上传图片的几种方式和格式"></a>4. PicGo上传图片的几种方式和格式</h2><ol><li>直接在Typoar里面粘贴或拖拽你需要的图片，会自动生成mrakdown方式链接到文档中，我个人最喜欢这种方式，简介快速</li></ol><ol start="2"><li>其它方式，直接见图叭</li></ol><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729213525.png" alt="image-20200729213525180"></p><h2 id="5-相关问题"><a href="#5-相关问题" class="headerlink" title="5. 相关问题"></a>5. 相关问题</h2><ol><li>最近遇到一个问题，PicGo不能上传图片到七牛云，我这里的解决方案是查看日志然后修改PicGo的配置解决的，希望诸君遇到的时候，能给大家一个参考叭</li><li>我这里遇到的问题就是我明明配置的七牛云图床，日志文件里面居然是smms图床，不知道是不是PicGo的问题，我后来改了一下，重新启动PicGo才搞定。</li></ol><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729213726.png" alt="image-20200729213726459"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729213945.png" alt="image-20200729213944978"></p><ul><li>修改配置文件</li></ul><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729214003.png" alt="image-20200729214003794"></p><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20200729214059.png" alt="image-20200729214059442"></p><blockquote><p>OK，完工，尽情享受Typora+PicGo+七牛云的写作环境叭。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PicGo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>面向对象与面向过程的比较</title>
       <link href="/posts/769cd987.html"/>
       <url>/posts/769cd987.html</url>
@@ -46,16 +71,16 @@
           
           <category> Java </category>
           
-          <category> Java </category>
+          <category> JavaSE </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> JavaSE </tag>
-            
             <tag> Java </tag>
+            
+            <tag> JavaSE </tag>
             
             <tag> 数组 </tag>
             
@@ -84,9 +109,9 @@
       
         <tags>
             
-            <tag> JavaSE </tag>
-            
             <tag> Java </tag>
+            
+            <tag> JavaSE </tag>
             
             <tag> BigInteger </tag>
             
@@ -117,9 +142,9 @@
       
         <tags>
             
-            <tag> JavaSE </tag>
-            
             <tag> Java </tag>
+            
+            <tag> JavaSE </tag>
             
         </tags>
       
@@ -146,9 +171,9 @@
       
         <tags>
             
-            <tag> JavaSE </tag>
-            
             <tag> Java </tag>
+            
+            <tag> JavaSE </tag>
             
             <tag> Math </tag>
             
@@ -437,6 +462,19 @@
             <tag> 内部类 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>model</title>
+      <link href="/posts/d79572d9.html"/>
+      <url>/posts/d79572d9.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="usual："><a href="#usual：" class="headerlink" title="usual："></a>usual：</h2><hr><p>title:<br>date:<br>categories:<br>tags: []<br>keywords:<br>description:<br>cover:<br>sticky: </p><hr><h2 id="page"><a href="#page" class="headerlink" title="page:"></a>page:</h2><p>title: 【必需】页面标题<br>date:  【必需】页面创建日期<br>updated:【可选】页面更新日期<br>type: 【必需】标签、分类和友情链接三个页面需要配置<br>comments:  【可选】显示页面评论模块(默认 true)<br>description: 【可选】页面描述<br>keywords: 【可选】页面关键字<br>top_img:  【可选】页面顶部图片<br>mathjax:      【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)<br>katex: 【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)<br>aside:  【可选】显示侧边栏 (默认 true)<br>aplayer： 【可选】在需要的页面加载aplayer的js和css,请参考音乐配置<br>highlight_shrink： 【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)</p><h2 id="post"><a href="#post" class="headerlink" title="post:"></a>post:</h2><p>title:  【必需】文章标题<br>date:  【必需】文章创建日期<br>updated:  【可选】文章更新日期<br>tags:  【可选】文章标签<br>categories:  【可选】文章分类<br>keywords:  【可选】文章关键字<br>description:  【可选】文章描述<br>top_img:      【可选】文章顶部图片<br>comments：  【可选】显示文章评论模块(默认 true)<br>cover:   【可选】文章缩略图(如果没有设置top_img,文章页顶部将显示cover缩略图，可设为false/图片地址/留空)<br>toc:   【可选】显示文章TOC(默认为设置中toc的enable配置)<br>toc_number:  【可选】显示toc_number(默认为设置中toc的number配置)<br>auto_open: 【可选】是否自动打开TOC(默认为设置中toc的auto_open配置)<br>copyright: 【可选】显示文章版权模块(默认为设置中post_copyright的enable配置)<br>mathjax: 【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)<br>katex: 【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)<br>aplayer： 【可选】在需要的页面加载aplayer的js和css,请参考音乐配置<br>highlight_shrink： 【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)</p>]]></content>
+      
+      
       
     </entry>
     
