@@ -49,8 +49,6 @@
       
         <tags>
             
-            <tag> Math </tag>
-            
             <tag> String </tag>
             
             <tag> StringBuffer </tag>
@@ -78,6 +76,8 @@
             <tag> Comparable </tag>
             
             <tag> Comparator </tag>
+            
+            <tag> Math </tag>
             
             <tag> BigInteger </tag>
             
