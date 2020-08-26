@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.bithachi.cn/about/index.html</loc>
+    
+    <lastmod>2020-08-25T13:59:59.101Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.bithachi.cn/posts/8f28afe1.html</loc>
     
     <lastmod>2020-08-20T13:37:54.390Z</lastmod>
@@ -180,13 +187,6 @@
     <loc>https://www.bithachi.cn/posts/dfcd7c37.html</loc>
     
     <lastmod>2020-07-21T06:46:15.658Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.bithachi.cn/about/index.html</loc>
-    
-    <lastmod>2020-07-17T15:10:11.898Z</lastmod>
     
   </url>
   
