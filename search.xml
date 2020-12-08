@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>MVC架构与SpringMVC入门</title>
+      <link href="/posts/8e55cf9f.html"/>
+      <url>/posts/8e55cf9f.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-什么是MVC架构？"><a href="#1-什么是MVC架构？" class="headerlink" title="1. 什么是MVC架构？"></a>1. 什么是MVC架构？</h2><p><img src= "/img/loading.gif" data-src="https://image.bithachi.cn/20201208162002.png" alt="https://blog.csdn.net/zhouym_/article/details/90611839"></p><ul><li>MVC是<code>模型(Model)、视图(View)、控制器(Controller)</code>的简写，是一种软件设计规范。</li><li>MVC将<code>业务逻辑、数据、视图</code>分离的方法来组织代码。</li><li>MVC主要作用是<strong>降低了视图与业务逻辑间的双向偶合</strong>。</li><li>MVC不是一种设计模式，<strong>MVC是一种架构模式</strong>。不同的MVC存在差异。</li></ul><p><strong>Model层:</strong> 在模型层中又可以分为两层，即Service层和Dao层,这两层的主要功能是：</p><ul><li>Service层: 负责一些业务处理，比如说：获取数据库连接，关闭数据库连接，事务回滚或者一些复杂的逻辑业务处理</li><li>Dao层：(Database Accept Object)  负责访问数据库，对数据的操作，获取结果集，将结果集中的数据装到OV（Object Value）对象中，之后再返回给Service层</li></ul><p><strong>Controller层：</strong>主要功能是接收用户请求，委托给模型进行处理（状态改变），处理完毕后把返回的模型数据返回给视图，由视图负责展示。也就是说控制器做了个<code>调度员</code>的工作。</p><p><strong>View层：</strong>主要负责显示数据（Html、Css、jQuery等等）,一般就是我们见到的用户界面，客户想看到的东西。</p><p><strong>MVC框架要做哪些事情</strong></p><ol><li>将url映射到java类或java类的方法 .</li><li>封装用户提交的数据 .</li><li>处理请求–调用相关的业务处理–封装响应数据 .</li><li>将响应的数据进行渲染 . jsp / html 等表示层数据 .</li></ol><p><strong>说明：</strong></p><p>​    常见的服务器端MVC框架有：Struts、Spring MVC、ASP.NET MVC、Zend Framework、JSF；常见前端MVC框架：vue、angularjs、react、backbone；由MVC演化出了另外一些模式如：MVP、MVVM 等等….</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> SpringMVC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringMVC </tag>
+            
+            <tag> MVC </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Spring AOP事务管理</title>
       <link href="/posts/ee8d0c39.html"/>
       <url>/posts/ee8d0c39.html</url>
